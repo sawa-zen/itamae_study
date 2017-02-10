@@ -11,5 +11,5 @@ template '/etc/nginx/nginx.conf' do
 end
 
 service 'nginx' do
-  action :start
+  action [:enable, :start]
 end
